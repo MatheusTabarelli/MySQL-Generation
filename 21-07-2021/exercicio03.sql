@@ -77,6 +77,6 @@ select tb_produto.nome, tb_produto.preco, tb_categoria.descricao
 from tb_produto inner join tb_categoria on tb_categoria.id = tb_produto.categoria_id;
 
 select tb_produto.nome, tb_produto.preco, tb_categoria.descricao
-from tb_produto inner join tb_categoria on tb_categoria.id = tb_produto.categoria_id where categoria_id = 3;
+from tb_produto inner join tb_categoria on tb_categoria.id = tb_produto.categoria_id and tb_categoria.descricao = "Medicamentos";
 
 
